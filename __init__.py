@@ -27,6 +27,7 @@ def register():
     wm = bpy.context.window_manager
     km = wm.keyconfigs.addon.keymaps.new(name="File Browser", space_type="FILE_BROWSER")
     kmi = km.keymap_items.new("fselnym.fselnym",type="L",value="PRESS",ctrl=True)
+    addon_keymap_data.append((km,kmi))
     kmi = km.keymap_items.new("fselnym.fselnym",type="F6",value="PRESS")
     addon_keymap_data.append((km,kmi))
     
